@@ -4,16 +4,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+/**
+ * Класс <b>MainActivity</b> тестового приложения для первой лабораторной работы.
+ * @author Виктор и Данил
+ * @version 0.0.0.0.0.0.0.1
+ */
+
 public class MainActivity extends AppCompatActivity {
 
-
-    //здесь находим максимум
     /**
-     * Конструктор - создание нового объекта с определенными значениями
-     * @param inputArray - получаемый массив
-     *
-     *
-     * @return
+     * Функция нахождения максимума
+     * @param inputArray массив в котором производится поиск
+     * @return Возвращает максимальный элемент из массива
      */
     public int getMax(int[] inputArray){
         int maxValue = inputArray[0];
@@ -25,10 +27,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * @param inputArray
-     * @return
+     * Функция нахождения минимума
+     * @param inputArray массив в котором производится поиск
+     * @return Возвращает минимальный элемент из массива
      */
-    // здесь находим минимум
     public int getMin(int[] inputArray){
         int minValue = inputArray[0];
         for(int i=1;i<inputArray.length;i++){
@@ -39,9 +41,6 @@ public class MainActivity extends AppCompatActivity {
         return minValue;
     }
 
-    /**
-     * @param savedInstanceState
-     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,9 +57,4 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_main);
-//    }
 }
